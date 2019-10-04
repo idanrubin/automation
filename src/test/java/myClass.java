@@ -33,5 +33,6 @@ public class myClass {
 	  long id = Thread.currentThread().getId();
 	  System.out.println("test3 id: " + id);
 	  driver.quit();
+	  Assert.fail("test is fail");
   }
 }
