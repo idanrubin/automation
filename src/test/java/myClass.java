@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class myClass {
@@ -32,5 +33,6 @@ public class myClass {
 	  long id = Thread.currentThread().getId();
 	  System.out.println("test3 id: " + id);
 	  driver.quit();
+	  Assert.fail();
   }
 }
